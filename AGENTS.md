@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Threat analysis runs client-side in demo mode (src/lib/analyzer.ts); why: no AI key configured and messages must not leave the device.
