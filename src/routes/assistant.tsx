@@ -56,7 +56,7 @@ const topics: Topic[] = [
 ];
 
 function Assistant() {
-  const [active, setActive] = useState(topics[0].id);
+  const [active, setActive] = useState(topics[0]!.id);
   const t = topics.find((x) => x.id === active)!;
   return (
     <div>
