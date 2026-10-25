@@ -4,9 +4,9 @@ import { ArrowRight, Lock, MessageSquareWarning, LifeBuoy, Timer, Shapes, Scale,
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AEGIS — Recognise Threats. Take Control. Stay Safer." },
+      { title: "HIFZA — Recognise Threats. Take Control. Stay Safer." },
       { name: "description", content: "A privacy-conscious women's safety companion for online threats and personal safety." },
-      { property: "og:title", content: "AEGIS — Women's Safety Companion" },
+      { property: "og:title", content: "HIFZA — Women's Safety Companion" },
       { property: "og:description", content: "Recognise threats. Take control. Stay safer." },
     ],
   }),
@@ -26,7 +26,7 @@ function Home() {
   return (
     <div className="space-y-10">
       <section className="bg-hero overflow-hidden rounded-3xl px-6 py-12 text-primary-foreground shadow-card md:px-12 md:py-16">
-        <p className="text-sm font-semibold uppercase tracking-widest opacity-80">Welcome to AEGIS</p>
+        <p className="text-sm font-semibold uppercase tracking-widest opacity-80">Welcome to HIFZA</p>
         <h1 className="mt-3 max-w-2xl text-4xl font-bold leading-tight md:text-5xl">
           Recognise Threats. Take Control. Stay Safer.
         </h1>
@@ -61,7 +61,7 @@ function Home() {
           <h2 className="font-semibold">Your privacy comes first</h2>
           <p className="mt-1 text-sm text-muted-foreground">
             Messages you analyse are processed in your browser and are not saved or sent anywhere.
-            AEGIS never asks for your location or contacts. Results are informational and may be incorrect.
+            HIFZA never asks for your location or contacts. Results are informational and may be incorrect.
           </p>
         </div>
         <Link to="/about" className="btn btn-outline">Read privacy details</Link>

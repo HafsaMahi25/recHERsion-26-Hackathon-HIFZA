@@ -79,7 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "AEGIS — Women's Safety Companion" },
+      { title: "HIFZA — Women's Safety Companion" },
       { name: "description", content: "Recognise threats. Take control. Stay safer." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -125,7 +125,7 @@ function RootComponent() {
         <Outlet />
       </main>
       <footer className="border-t py-6 text-center text-xs text-muted-foreground">
-        AEGIS provides general information only. In an emergency, contact local emergency services.
+        HIFZA provides general information only. In an emergency, contact local emergency services.
       </footer>
     </QueryClientProvider>
   );

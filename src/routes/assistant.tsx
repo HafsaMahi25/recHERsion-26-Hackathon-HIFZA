@@ -6,9 +6,9 @@ import { PageIntro } from "@/components/SiteHeader";
 export const Route = createFileRoute("/assistant")({
   head: () => ({
     meta: [
-      { title: "Digital Safety Assistant — AEGIS" },
+      { title: "Digital Safety Assistant — HIFZA" },
       { name: "description", content: "Practical guidance for online harassment, impersonation, scams and privacy breaches." },
-      { property: "og:title", content: "Digital Safety Assistant — AEGIS" },
+      { property: "og:title", content: "Digital Safety Assistant — HIFZA" },
       { property: "og:description", content: "Step-by-step guidance, evidence tips and reporting channels." },
     ],
   }),
@@ -35,7 +35,7 @@ const topics: Topic[] = [
   {
     id: "messages", label: "Suspicious messages", icon: MessageCircleWarning,
     summary: "Unexpected texts, DMs or emails that feel pressuring, odd or too good to be true.",
-    steps: ["Pause — don't click links, open attachments or reply.", "Verify the sender through a contact method you already trust.", "Run the message through the AEGIS Threat Analyzer for possible warning signs."],
+    steps: ["Pause — don't click links, open attachments or reply.", "Verify the sender through a contact method you already trust.", "Run the message through the HIFZA Threat Analyzer for possible warning signs."],
     evidence: ["Screenshot the message including the sender's number or address.", "Don't forward links to others; copy them as text if needed for a report."],
     report: ["Report as spam/phishing in your messaging or email app.", "Forward scam texts to your mobile carrier's spam reporting number where available."],
   },

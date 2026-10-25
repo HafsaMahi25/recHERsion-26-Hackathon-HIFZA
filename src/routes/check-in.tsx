@@ -6,9 +6,9 @@ import { PageIntro } from "@/components/SiteHeader";
 export const Route = createFileRoute("/check-in")({
   head: () => ({
     meta: [
-      { title: "Personal Safety Check-in — AEGIS" },
+      { title: "Personal Safety Check-in — HIFZA" },
       { name: "description", content: "Start a temporary safety check-in and mark yourself safe when you arrive." },
-      { property: "og:title", content: "Personal Safety Check-in — AEGIS" },
+      { property: "og:title", content: "Personal Safety Check-in — HIFZA" },
       { property: "og:description", content: "A simple timed check-in with a simulated trusted-contact alert." },
     ],
   }),
@@ -66,7 +66,7 @@ function CheckIn() {
 
       <div className="mb-5 flex items-start gap-3 rounded-2xl border border-accent bg-secondary p-4 text-sm text-secondary-foreground">
         <FlaskConical className="mt-0.5 h-5 w-5 shrink-0" aria-hidden />
-        <p><strong>Simulation only.</strong> AEGIS does not send real messages, and never asks for your location or contacts. Check-ins exist only on this page and disappear when you close it.</p>
+        <p><strong>Simulation only.</strong> HIFZA does not send real messages, and never asks for your location or contacts. Check-ins exist only on this page and disappear when you close it.</p>
       </div>
 
       <div className="card mx-auto max-w-xl p-6">
@@ -122,7 +122,7 @@ function CheckIn() {
                 <em>Example of what a real safety app might send:</em> "Your friend hasn't completed their check-in
                 '{state.label}'. Please try to reach them."
               </p>
-              <p className="mt-2 text-xs font-semibold">No message was sent to anyone. AEGIS has no contact information.</p>
+              <p className="mt-2 text-xs font-semibold">No message was sent to anyone. HIFZA has no contact information.</p>
             </div>
             <p className="text-sm text-muted-foreground">If you are safe, complete your check-in. If you need help, contact someone you trust or local emergency services.</p>
             <button className="btn btn-primary w-full" onClick={complete}><CheckCircle2 className="h-4 w-4" /> Complete Check-in — I'm safe</button>

@@ -19,16 +19,16 @@ import { PageIntro } from "@/components/SiteHeader";
 export const Route = createFileRoute("/discreet-activation")({
   head: () => ({
     meta: [
-      { title: "Discreet Activation Lab — AEGIS" },
+      { title: "Discreet Activation Lab — HIFZA" },
       {
         name: "description",
         content:
           "Prototype demonstrations of two proposed emergency activation concepts: a secret drawn shape and a voice shortcut.",
       },
-      { property: "og:title", content: "Discreet Activation Lab — AEGIS" },
+      { property: "og:title", content: "Discreet Activation Lab — HIFZA" },
       {
         property: "og:description",
-        content: "Clearly labelled prototypes of discreet emergency activation ideas for the future AEGIS Android app.",
+        content: "Clearly labelled prototypes of discreet emergency activation ideas for the future HIFZA Android app.",
       },
     ],
   }),
@@ -288,7 +288,7 @@ function SecretShape() {
 /* Voice Shortcut                                                      */
 /* ------------------------------------------------------------------ */
 
-const SAMPLE_PHRASE = "aegis help me";
+const SAMPLE_PHRASE = "hifza help me";
 
 type SpeechRecognitionType = {
   lang: string;
@@ -364,7 +364,7 @@ function VoiceShortcut() {
   const startSimulated = () => {
     setSupported(false);
     setState({ status: "listening", simulated: true });
-    timersRef.current.push(window.setTimeout(() => finish("Aegis help me", true), 2200));
+    timersRef.current.push(window.setTimeout(() => finish("Hifza help me", true), 2200));
   };
 
   const start = () => {
@@ -393,8 +393,8 @@ function VoiceShortcut() {
       </div>
       <p className="mt-3 text-sm text-muted-foreground">
         The future Android app could respond to a spoken phrase. Try it here: activate the demo, then say the
-        sample phrase <strong>"Aegis help me"</strong>. Your browser will ask for microphone permission — only
-        after you press the button. AEGIS does not record, store or send your audio.
+        sample phrase <strong>"Hifza help me"</strong>. Your browser will ask for microphone permission — only
+        after you press the button. HIFZA does not record, store or send your audio.
       </p>
 
       {supported === false && (
@@ -412,7 +412,7 @@ function VoiceShortcut() {
               <Volume2 className="h-7 w-7" aria-hidden />
             </span>
             <p className="text-sm font-semibold">
-              {state.simulated ? "Listening… (simulated — microphone not in use)" : "Listening… say “Aegis help me”"}
+              {state.simulated ? "Listening… (simulated — microphone not in use)" : "Listening… say “Hifza help me”"}
             </p>
             <button className="btn btn-outline" onClick={stop}>
               <MicOff className="h-4 w-4" /> Stop
@@ -454,7 +454,7 @@ function VoiceShortcut() {
           </p>
           <p className="mt-2 text-sm text-secondary-foreground">
             {state.heard
-              ? `Heard: “${state.heard}”. That doesn't match the sample phrase “Aegis help me”.`
+              ? `Heard: “${state.heard}”. That doesn't match the sample phrase “Hifza help me”.`
               : "Nothing was recognised. Check your microphone and try again."}{" "}
             Speak clearly and close to the microphone, then try again.
           </p>
@@ -467,7 +467,7 @@ function VoiceShortcut() {
           </p>
           <p className="mt-2 text-sm text-secondary-foreground">
             That's completely fine — the demo only works with your permission. You can allow microphone access in
-            your browser settings and try again, or continue exploring the rest of AEGIS without it.
+            your browser settings and try again, or continue exploring the rest of HIFZA without it.
           </p>
           <button className="btn btn-outline mt-3" onClick={startSimulated}>
             <Volume2 className="h-4 w-4" /> Use the simulated demo instead
@@ -493,7 +493,7 @@ function DiscreetActivation() {
   return (
     <div>
       <PageIntro eyebrow="Discreet Activation Lab" title="Proposed ways to call for help, quietly">
-        Two early concepts for the future AEGIS Android app. Both are working prototypes you can try here — and
+        Two early concepts for the future HIFZA Android app. Both are working prototypes you can try here — and
         both are clearly simulated: they never place calls, send messages, or contact anyone.
       </PageIntro>
 

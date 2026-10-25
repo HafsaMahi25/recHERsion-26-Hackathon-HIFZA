@@ -17,13 +17,13 @@ import { PageIntro } from "@/components/SiteHeader";
 export const Route = createFileRoute("/safety-plan")({
   head: () => ({
     meta: [
-      { title: "My Safety Plan — AEGIS" },
+      { title: "My Safety Plan — HIFZA" },
       {
         name: "description",
         content:
           "Build a personal safety plan: a checklist, preferred safety actions, check-in review, support resources and a simulated emergency walkthrough.",
       },
-      { property: "og:title", content: "My Safety Plan — AEGIS" },
+      { property: "og:title", content: "My Safety Plan — HIFZA" },
       {
         property: "og:description",
         content: "A guided personal safety plan with a clearly simulated emergency practice run.",
@@ -65,7 +65,7 @@ const drillSteps = [
   },
   {
     title: "3. Location attached",
-    body: "A real app could attach your live location. AEGIS's web prototype never asks for or stores your location, so this step is described, not performed.",
+    body: "A real app could attach your live location. HIFZA's web prototype never asks for or stores your location, so this step is described, not performed.",
   },
   {
     title: "4. Alarm & recording options",
@@ -134,7 +134,7 @@ function SafetyPlan() {
       <div className="mb-6 flex items-start gap-3 rounded-2xl border border-accent bg-secondary p-4 text-sm text-secondary-foreground">
         <FlaskConical className="mt-0.5 h-5 w-5 shrink-0" aria-hidden />
         <p>
-          <strong>Prototype with sample data.</strong> AEGIS never asks for real contact details or your precise
+          <strong>Prototype with sample data.</strong> HIFZA never asks for real contact details or your precise
           location, and it cannot contact authorities or trusted contacts. Your checklist choices are stored only
           in this browser, on this device.
         </p>
