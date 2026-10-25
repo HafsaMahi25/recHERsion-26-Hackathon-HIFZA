@@ -14,6 +14,9 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as AnalyzerRouteImport } from './routes/analyzer'
 import { Route as AssistantRouteImport } from './routes/assistant'
 import { Route as CheckInRouteImport } from './routes/check-in'
+import { Route as DiscreetActivationRouteImport } from './routes/discreet-activation'
+import { Route as LawsRightsRouteImport } from './routes/laws-rights'
+import { Route as SafetyPlanRouteImport } from './routes/safety-plan'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -40,6 +43,21 @@ const CheckInRoute = CheckInRouteImport.update({
   path: '/check-in',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DiscreetActivationRoute = DiscreetActivationRouteImport.update({
+  id: '/discreet-activation',
+  path: '/discreet-activation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LawsRightsRoute = LawsRightsRouteImport.update({
+  id: '/laws-rights',
+  path: '/laws-rights',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SafetyPlanRoute = SafetyPlanRouteImport.update({
+  id: '/safety-plan',
+  path: '/safety-plan',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -47,6 +65,9 @@ export interface FileRoutesByFullPath {
   '/analyzer': typeof AnalyzerRoute
   '/assistant': typeof AssistantRoute
   '/check-in': typeof CheckInRoute
+  '/discreet-activation': typeof DiscreetActivationRoute
+  '/laws-rights': typeof LawsRightsRoute
+  '/safety-plan': typeof SafetyPlanRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +75,9 @@ export interface FileRoutesByTo {
   '/analyzer': typeof AnalyzerRoute
   '/assistant': typeof AssistantRoute
   '/check-in': typeof CheckInRoute
+  '/discreet-activation': typeof DiscreetActivationRoute
+  '/laws-rights': typeof LawsRightsRoute
+  '/safety-plan': typeof SafetyPlanRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,13 +86,41 @@ export interface FileRoutesById {
   '/analyzer': typeof AnalyzerRoute
   '/assistant': typeof AssistantRoute
   '/check-in': typeof CheckInRoute
+  '/discreet-activation': typeof DiscreetActivationRoute
+  '/laws-rights': typeof LawsRightsRoute
+  '/safety-plan': typeof SafetyPlanRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/analyzer' | '/assistant' | '/check-in'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/analyzer'
+    | '/assistant'
+    | '/check-in'
+    | '/discreet-activation'
+    | '/laws-rights'
+    | '/safety-plan'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/analyzer' | '/assistant' | '/check-in'
-  id: '__root__' | '/' | '/about' | '/analyzer' | '/assistant' | '/check-in'
+  to:
+    | '/'
+    | '/about'
+    | '/analyzer'
+    | '/assistant'
+    | '/check-in'
+    | '/discreet-activation'
+    | '/laws-rights'
+    | '/safety-plan'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/analyzer'
+    | '/assistant'
+    | '/check-in'
+    | '/discreet-activation'
+    | '/laws-rights'
+    | '/safety-plan'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -77,6 +129,9 @@ export interface RootRouteChildren {
   AnalyzerRoute: typeof AnalyzerRoute
   AssistantRoute: typeof AssistantRoute
   CheckInRoute: typeof CheckInRoute
+  DiscreetActivationRoute: typeof DiscreetActivationRoute
+  LawsRightsRoute: typeof LawsRightsRoute
+  SafetyPlanRoute: typeof SafetyPlanRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -116,6 +171,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CheckInRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/discreet-activation': {
+      id: '/discreet-activation'
+      path: '/discreet-activation'
+      fullPath: '/discreet-activation'
+      preLoaderRoute: typeof DiscreetActivationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/laws-rights': {
+      id: '/laws-rights'
+      path: '/laws-rights'
+      fullPath: '/laws-rights'
+      preLoaderRoute: typeof LawsRightsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/safety-plan': {
+      id: '/safety-plan'
+      path: '/safety-plan'
+      fullPath: '/safety-plan'
+      preLoaderRoute: typeof SafetyPlanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -125,6 +201,9 @@ const rootRouteChildren: RootRouteChildren = {
   AnalyzerRoute: AnalyzerRoute,
   AssistantRoute: AssistantRoute,
   CheckInRoute: CheckInRoute,
+  DiscreetActivationRoute: DiscreetActivationRoute,
+  LawsRightsRoute: LawsRightsRoute,
+  SafetyPlanRoute: SafetyPlanRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
