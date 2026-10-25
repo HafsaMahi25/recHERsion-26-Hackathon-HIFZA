@@ -469,6 +469,9 @@ function VoiceShortcut() {
             That's completely fine — the demo only works with your permission. You can allow microphone access in
             your browser settings and try again, or continue exploring the rest of AEGIS without it.
           </p>
+          <button className="btn btn-outline mt-3" onClick={startSimulated}>
+            <Volume2 className="h-4 w-4" /> Use the simulated demo instead
+          </button>
         </div>
       )}
 
