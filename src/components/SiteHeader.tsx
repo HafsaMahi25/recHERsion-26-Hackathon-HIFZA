@@ -7,6 +7,9 @@ const links = [
   { to: "/analyzer", label: "Threat Analyzer" },
   { to: "/assistant", label: "Safety Assistant" },
   { to: "/check-in", label: "Check-in" },
+  { to: "/discreet-activation", label: "Activation Lab" },
+  { to: "/laws-rights", label: "Laws & Rights" },
+  { to: "/safety-plan", label: "Safety Plan" },
   { to: "/about", label: "About & Privacy" },
 ] as const;
 

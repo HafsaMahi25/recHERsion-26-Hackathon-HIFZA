@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Lock, MessageSquareWarning, LifeBuoy, Timer } from "lucide-react";
+import { ArrowRight, Lock, MessageSquareWarning, LifeBuoy, Timer, Shapes, Scale, ClipboardCheck } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -17,6 +17,9 @@ const features = [
   { to: "/analyzer", icon: MessageSquareWarning, title: "Threat Analyzer", body: "Paste a suspicious message and see possible warning signs with suggested next steps." },
   { to: "/assistant", icon: LifeBuoy, title: "Digital Safety Assistant", body: "Practical guidance for harassment, impersonation, scams and privacy breaches." },
   { to: "/check-in", icon: Timer, title: "Safety Check-in", body: "Start a timed check-in for a walk, date or journey, and mark yourself safe." },
+  { to: "/discreet-activation", icon: Shapes, title: "Discreet Activation Lab", body: "Try two prototype concepts for calling help quietly: a secret drawn shape and a voice shortcut." },
+  { to: "/laws-rights", icon: Scale, title: "Laws & Rights", body: "Plain-language introductions to Indian safety laws, with examples, next steps and official helplines." },
+  { to: "/safety-plan", icon: ClipboardCheck, title: "My Safety Plan", body: "Build a personal safety plan and practise a simulated emergency workflow with sample data." },
 ] as const;
 
 function Home() {
