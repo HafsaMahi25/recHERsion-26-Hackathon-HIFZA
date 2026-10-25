@@ -5,13 +5,13 @@ import { PageIntro } from "@/components/SiteHeader";
 export const Route = createFileRoute("/laws-rights")({
   head: () => ({
     meta: [
-      { title: "Laws & Rights — AEGIS" },
+      { title: "Laws & Rights — HIFZA" },
       {
         name: "description",
         content:
           "Plain-language introductions to Indian laws on sexual harassment, voyeurism, stalking and privacy, with official support resources.",
       },
-      { property: "og:title", content: "Laws & Rights — AEGIS" },
+      { property: "og:title", content: "Laws & Rights — HIFZA" },
       {
         property: "og:description",
         content: "Educational summaries of Indian safety laws and official helplines. Not legal advice.",
@@ -196,7 +196,7 @@ function LawsRights() {
           <Gavel className="h-6 w-6 text-primary" aria-hidden /> Official support resources
         </h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          Free, official Government of India services. AEGIS does not contact these services for you — save these
+          Free, official Government of India services. HIFZA does not contact these services for you — save these
           numbers and links so you can reach them directly.
         </p>
         <div className="mt-4 grid gap-5 md:grid-cols-3">

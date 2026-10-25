@@ -22,7 +22,7 @@ export function SiteHeader() {
           <span className="grid h-9 w-9 place-items-center rounded-xl bg-hero text-primary-foreground">
             <ShieldCheck className="h-5 w-5" aria-hidden />
           </span>
-          <span className="font-display text-lg font-bold tracking-wide">AEGIS</span>
+          <span className="font-display text-lg font-bold tracking-wide">HIFZA</span>
         </Link>
         <nav className="hidden gap-1 md:flex" aria-label="Main">
           {links.map((l) => (

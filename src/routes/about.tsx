@@ -5,17 +5,17 @@ import { PageIntro } from "@/components/SiteHeader";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About & Privacy — AEGIS" },
-      { name: "description", content: "Why AEGIS exists, the limits of automated threat analysis, and how your data is handled." },
-      { property: "og:title", content: "About & Privacy — AEGIS" },
-      { property: "og:description", content: "Purpose, limitations and data handling at AEGIS." },
+      { title: "About & Privacy — HIFZA" },
+      { name: "description", content: "Why HIFZA exists, the limits of automated threat analysis, and how your data is handled." },
+      { property: "og:title", content: "About & Privacy — HIFZA" },
+      { property: "og:description", content: "Purpose, limitations and data handling at HIFZA." },
     ],
   }),
   component: About,
 });
 
 const sections = [
-  { icon: Target, title: "Our purpose", body: ["AEGIS helps women recognise potential online threats and find practical, calm safety guidance — without needing technical knowledge or handing over personal data."] },
+  { icon: Target, title: "Our purpose", body: ["HIFZA helps women recognise potential online threats and find practical, calm safety guidance — without needing technical knowledge or handing over personal data."] },
   { icon: ScanSearch, title: "Limits of automated analysis", body: [
     "The Threat Analyzer looks for language patterns commonly found in scams, harassment and coercion. It cannot understand full context, relationships, tone or intent.",
     "It may miss real threats and may flag harmless messages. It never decides whether a message is safe or dangerous — that judgement stays with you.",
@@ -24,9 +24,9 @@ const sections = [
   { icon: Database, title: "How your information is handled", body: [
     "Messages you paste are analysed in your browser. They are not uploaded, saved, logged or shared, and they're cleared when you leave or press Clear.",
     "Check-in labels exist only on the open page. No accounts, cookies for tracking, location or contacts are collected.",
-    "Simulated alerts are examples only — AEGIS cannot send messages to anyone.",
+    "Simulated alerts are examples only — HIFZA cannot send messages to anyone.",
   ] },
-  { icon: Eye, title: "Not an emergency service", body: ["AEGIS provides general information, not legal or professional advice. If you are in danger, contact local emergency services or a trusted support organisation."] },
+  { icon: Eye, title: "Not an emergency service", body: ["HIFZA provides general information, not legal or professional advice. If you are in danger, contact local emergency services or a trusted support organisation."] },
 ];
 
 function About() {

@@ -7,9 +7,9 @@ import { analyzeMessage, demoScenarios, MAX_LEN, validateMessage, type Analysis 
 export const Route = createFileRoute("/analyzer")({
   head: () => ({
     meta: [
-      { title: "Threat Analyzer — AEGIS" },
+      { title: "Threat Analyzer — HIFZA" },
       { name: "description", content: "Check a suspicious message for possible warning signs and get suggested next steps." },
-      { property: "og:title", content: "Threat Analyzer — AEGIS" },
+      { property: "og:title", content: "Threat Analyzer — HIFZA" },
       { property: "og:description", content: "Spot possible warning signs in suspicious messages." },
     ],
   }),
@@ -51,7 +51,7 @@ function Analyzer() {
   return (
     <div>
       <PageIntro eyebrow="Threat Analyzer" title="Is something about this message off?">
-        Paste a message you're unsure about. AEGIS highlights language patterns often seen in scams,
+        Paste a message you're unsure about. HIFZA highlights language patterns often seen in scams,
         harassment and coercion.
       </PageIntro>
 
@@ -143,7 +143,7 @@ function Analyzer() {
 
           <p className="flex gap-2 text-sm text-muted-foreground">
             <Info className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
-            These results are informational and may be incorrect. AEGIS cannot determine whether a message is
+            These results are informational and may be incorrect. HIFZA cannot determine whether a message is
             definitively safe or dangerous. Trust your judgement, and seek help if you feel unsafe.
           </p>
         </section>
